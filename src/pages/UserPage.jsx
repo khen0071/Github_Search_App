@@ -135,7 +135,7 @@ const UserPage = () => {
                     )}
                   </div>
                   <Row>
-                    <Col xs={6} lg={6} md={6}>
+                    <Col xs={12} lg={6} md={6}>
                       <div className="profile_text_container">
                         <div>
                           <i className="fa-solid fa-building"></i>
@@ -153,7 +153,7 @@ const UserPage = () => {
                       </div>
                     </Col>
 
-                    <Col xs={6} lg={6} md={6}>
+                    <Col xs={12} lg={6} md={6}>
                       <div className="profile_text_container">
                         <div>
                           <i className="fa-solid fa-location-dot"></i>
@@ -173,7 +173,7 @@ const UserPage = () => {
                   </Row>
 
                   <Row>
-                    <Col md={6} xs={6}>
+                    <Col xs={12} lg={6} md={6}>
                       <div className="profile_text_container">
                         <div>
                           <i className="fa-solid fa-link"></i>
@@ -191,7 +191,7 @@ const UserPage = () => {
                       </div>
                     </Col>
 
-                    <Col md={6} xs={6}>
+                    <Col xs={12} lg={6} md={6}>
                       <div className="profile_text_container">
                         <div>
                           <i className="fa-solid fa-pen-nib"></i>

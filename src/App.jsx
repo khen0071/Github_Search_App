@@ -5,9 +5,8 @@ import { Container } from "react-bootstrap";
 
 import { AnimatePresence } from "framer-motion";
 
-// import Header from "./components/Header";
 import Navbar from "./components/Navbar";
-// import Footer from "./components/Footer";
+import ScrollToTop from "./components/Scrolltotop";
 import Alert from "./components/Alert";
 
 import AnimatedRoutes from "./components/AnimatedRoutes";
@@ -18,6 +17,7 @@ const App = () => {
       <GitHubProvider>
         <AlertProvider>
           <Router>
+            <ScrollToTop />
             <Navbar />
             <Container>
               <AnimatePresence mode="wait">
