@@ -12,6 +12,9 @@ import viteLogo from "/vite.svg";
 
 import { motion } from "framer-motion";
 
+import Lottie from "lottie-react";
+import animationData from "../../assets/search-profile2.json";
+
 const buttonVariants = {
   hover: {
     scale: 1.05,
@@ -91,10 +94,12 @@ const UserSearch = () => {
               className="btn"
             >
               {" "}
-              <i className="fa-solid fa-magnifying-glass"></i> Search
+              <i className="fa-solid fa-magnifying-glass"></i>
+              Search
             </motion.button>
           </div>
         </motion.form>
+
         {users.length === 0 && (
           <>
             <motion.div
@@ -124,29 +129,14 @@ const UserSearch = () => {
                 Explore GitHub Repositories and Users
               </motion.h4>
 
-              <motion.p
+              <motion.div
                 whileHover={{
-                  scale: 1.03,
+                  scale: 1.1,
                 }}
+                className="animation_container"
               >
-                GitHub Finder is a powerful web application that allows you to
-                search for GitHub users with ease. Whether you are looking for a
-                specific project or want to discover talented developers, GitHub
-                Search App provides an intuitive and efficient way to explore
-                the vast GitHub User Ecosystem.
-              </motion.p>
-
-              <motion.p
-                whileHover={{
-                  scale: 1.03,
-                }}
-              >
-                Whether you are a developer, a project manager, or an
-                open-source enthusiast, GitHub Search App is your go-to tool for
-                exploring and connecting within the GitHub universe. Start your
-                journey now and unlock the vast potential of GitHub with GitHub
-                Search App!
-              </motion.p>
+                <Lottie animationData={animationData} />
+              </motion.div>
 
               <div className="logo_icon_container">
                 <motion.img
@@ -212,6 +202,30 @@ const UserSearch = () => {
                   alt="Framer logo"
                 />
               </div>
+
+              <motion.p
+                whileHover={{
+                  scale: 1.03,
+                }}
+              >
+                GitHub Finder is a powerful web application that allows you to
+                search for GitHub users with ease. Whether you are looking for a
+                specific project or want to discover talented developers, GitHub
+                Search App provides an intuitive and efficient way to explore
+                the vast GitHub User Ecosystem.
+              </motion.p>
+
+              <motion.p
+                whileHover={{
+                  scale: 1.03,
+                }}
+              >
+                Whether you are a developer, a project manager, or an
+                open-source enthusiast, GitHub Search App is your go-to tool for
+                exploring and connecting within the GitHub universe. Start your
+                journey now and unlock the vast potential of GitHub with GitHub
+                Search App!
+              </motion.p>
             </motion.div>
           </>
         )}

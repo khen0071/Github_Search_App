@@ -2,6 +2,9 @@ import { Link } from "react-router-dom";
 
 import AnimatedPage from "./src/components/AnimatedPage";
 
+import Lottie from "lottie-react";
+import animationData from "./src/assets/404-2.json";
+
 const NotFoundPage = () => {
   return (
     <AnimatedPage>
@@ -13,8 +16,10 @@ const NotFoundPage = () => {
         className="notfound_container"
       >
         <div>
-          <h1>Ooops!</h1>
-          <h2>404 - Page Not Found!</h2>
+          <div className="animation_404_container">
+            <Lottie animationData={animationData} />
+          </div>
+
           <Link to="/">
             <button className="btn-notfound">
               <i className="icon fa-solid fa-house-chimney"></i> Back To Home
