@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import { useEffect, useContext } from "react";
 import { useParams, Link } from "react-router-dom";
 import { Row, Col } from "react-bootstrap";
@@ -131,7 +132,7 @@ const UserPage = () => {
                     {bio === null ? (
                       <h4 style={{ color: "#F72119" }}>No Bio Available</h4>
                     ) : (
-                      <h4>{bio}</h4>
+                      <h4>"{bio}"</h4>
                     )}
                   </div>
                   <Row>

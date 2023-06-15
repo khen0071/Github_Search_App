@@ -44,7 +44,12 @@ const RepoItem = ({ repo }) => {
             </a>
           </div>
           <div className="description">Description: </div>
-          <p>- {description}</p>
+
+          {description === null ? (
+            <p style={{ color: "#F72119" }}>No Available Description</p>
+          ) : (
+            <p>- {description}</p>
+          )}
 
           <div className="repo_icons_container">
             <div className="repo_icons">
