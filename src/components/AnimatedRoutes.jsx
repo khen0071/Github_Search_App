@@ -1,6 +1,6 @@
 import { Routes, Route, useLocation } from "react-router-dom";
 
-import NotFoundPage from "../pages/NotFoundPage";
+import NotFoundPage from "../../NotFoundPage";
 import HomePage from "../pages/HomePage";
 import UserPage from "../pages/UserPage";
 
