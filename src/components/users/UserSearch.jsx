@@ -13,7 +13,7 @@ import viteLogo from "/vite.svg";
 import { motion } from "framer-motion";
 
 import Lottie from "lottie-react";
-import animationData from "../../assets/search-profile2.json";
+import animationData from "../../assets/search-woman2.json";
 
 const buttonVariants = {
   hover: {
