@@ -82,7 +82,7 @@ const UserSearch = () => {
               onChange={searchHandler}
               value={text}
               type="text"
-              placeholder="Enter Github Username"
+              placeholder="Github Username"
             ></input>
 
             <motion.button

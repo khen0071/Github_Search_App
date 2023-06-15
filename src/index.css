@@ -561,21 +561,22 @@ body {
 
 @media only screen and (max-width: 450px) {
   .search_input input {
-    font-size: 12px;
+    font-size: 16px;
+    width: 160px;
   }
 
   .search_input button {
-    font-size: 12px;
+    font-size: 14px;
   }
 
   .search_input i {
-    font-size: 12px;
+    font-size: 14px;
   }
   .user_search_description h4 {
-    font-size: 18px;
+    font-size: 16px;
   }
   .user_search_description p {
-    font-size: 14px;
+    font-size: 12px;
     text-align: center;
   }
 }
